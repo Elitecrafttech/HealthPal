@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .form{
+        @apply flex flex-col gap-5
+    }
+    input{
+        @apply border-solid border-2
+    }
+    textarea{
+        @apply border-solid border-2
+    }
+}

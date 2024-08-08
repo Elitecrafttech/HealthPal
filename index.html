@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/logo.jpg">
+    <title>Health Pal</title>
+    <link rel="stylesheet" href="./src/input.css">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <main>
+        <nav class="topbar">
+            <div class="barimg">
+                <img src="img/facebook-icon.png" alt="">
+                <img src="img/twitter-icon.png" alt="">
+                <img src="img/insta-icon.png" alt="">
+                <img src="img/linkedin-icon.png" alt="">
+                <img src="" alt="">
+            </div>
+            <div class="contactinfo">
+                <div class="info1">
+                    <img src="img/email-logo.png" alt="">
+                    <p>support@healthpalsolution.com</p>
+                </div>
+                <div class="hr1"></div>
+                <div class="info2">
+                    <img src="img/phone-icon.png" alt="">
+                    <p>123-456-7890</p>
+                </div>
+                <div class="hr2"></div>
+                <div>
+                    <button>Contact Us</button>
+                </div>
+            </div>
+        </nav>
+        <nav class="nextbar">
+            <img src="img/shortlogo-bg.png" alt="">
+            <div>
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Services</li>
+                    <li>Locations</li>
+                    <button class="nextbtn">Book a Section</button>
+                </ul>
+                <img src="img/hambuger.png" alt="" class="ham">
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="hero1">
+                <p class="herop1">best solution to health issue</p>
+                <h1>Medical Centers & Clinical Support.. Make Your Health Better</h1>
+                <p class="herop2">"Welcome to HealthPal, your trusted companion for a healthier life. We empower individuals to take control of their well-being by providing personalized health insights, expert guidance, and supportive community connections. With HealthPal, discover a holistic approach to wellness that nurtures your body, mind, and spirit."</p>
+                <div class="EAbtn">
+                    <button class="Abtn">Book Appointment</button>
+                    <button class="Ebtn">Explore Our Services ></button>
+                </div>
+            </div>
+            <div class="hero2">
+                <img src="img/doc-banner-img.png" alt="">
+            </div>
+        </section>
+    </main>
+    <section class="form">
+        <div class="appointform">
+            <input type="text" required="" placeholder="Your Name" class="putname">
+            <select required="" class="putops">
+                <option value="">Select Your Location</option>
+                <option value="">New York</option>
+                <option value="">Los Angeles</option>
+                <option value="">Chicago</option>
+                <option value="">Houston</option>
+                
+            </select>
+            <input type="date" required="" placeholder="Appointment Date" class="putdate">
+            <button class="putbtn" onclick="booking()">Book Now</button>
+        </div>
+    </section>
+    <section class="service">
+        <h1 class="ser1">Services & Health Care</h1>
+        <div class="care">
+            <div class="care1">
+                <div>
+                    <img src="img/cardiolog.png" alt="">
+                    <h1>Cardiologist</h1>
+                    <p>A heart specialist dedicated to diagnosing, treating, and preventing disorders of the heart and blood vessels, promoting optimal cardiovascular health.</p>
+                </div>
+                <div>
+                    <img src="img/emergency.png" alt="">
+                    <h1>Emergency Services</h1>
+                    <p>Rapid response and urgent care for critical situations, providing immediate attention and treatment to save lives and prevent further harm.</p>
+                </div>
+                <div>
+                    <img src="img/theraphy.png" alt="">
+                    <h1>Theraphy</h1>
+                    <p>Guided support and guidance to help individuals cope with mental health challenges, emotional struggles, and relationship issues, promoting personal growth and well-being.</p>
+                </div>
+                <div>
+                    <img src="img/dna.png" alt="">
+                    <h1>DNA Testing</h1>
+                    <p>Uncovering genetic secrets to reveal ancestry, identify inherited traits, and detect potential health risks, empowering informed decisions about your life and well-being.</p>
+                </div>
+            </div>
+
+            <div class="care2">
+                <div>
+                    <img src="img/neuro-spine.png" alt="">
+                    <h1>Neurosurgery</h1>
+                    <p>Precise surgical care for brain, spine, and nervous system disorders, restoring function and improving lives.</p>
+                </div>
+                <div>
+                    <img src="img/radiology.png" alt="">
+                    <h1>Radiology</h1>
+                    <p>Using medical imaging technologies like X-rays, MRIs, and CT scans to help diagnose and treat diseases, injuries, and conditions.</p>
+                </div>
+                <div>
+                    <img src="img/operation.png" alt="">
+                    <h1>Operation Theater</h1>
+                    <p>A state-of-the-art surgical suite where skilled medical teams perform complex operations with precision, care, and compassion.</p>
+                </div>
+                <div>
+                    <img src="img/heart.png" alt="">
+                    <h1>Heart Surgery</h1>
+                    <p>Advanced surgical procedures to repair or replace damaged heart structures, restoring optimal cardiac function and improving quality of life.</p>
+                </div>
+                <div>
+                    <img src="img/dental.png" alt="">
+                    <h1>Dental Service</h1>
+                    <p>Expert Comprehensive oral care for all ages, for a healthy, beautiful smile, from routine cleanings and fillings to advanced cosmetic and restorative treatments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq">
+        <div class="ask">
+            <h1>Frequently Asked Questions</h1>
+            <img src="img/doc-bg-header.png" alt="">
+        </div>
+        <div class="freq">
+            <div class="freq1">
+                <div class="q1">
+                    <h1>How to book an apointment</h1>
+                    <p>Looks for a section related to your illness, see the doctor availability then book according to the available hours</p>
+                </div>
+                <button><img src="img/accordion.png" alt=""></button>
+            </div>
+            <div class="freq2">
+                <div class="q2">
+                    <h1>Is my information safe?</h1>
+                    <p>Yes, your information is encrypted and securely stored,our website uses secure technology to protect your personal and medical information, ensuring confidentiality and peace of mind.</p>
+                </div>
+                <button><img src="img/accordion.png" alt=""></button>
+            </div>
+            <div class="freq3">
+                <div class="q3">
+                    <h1>Is the consultation paid?</h1>
+                    <p>Some consultations may incur a fee, while others are free. Please check with your insurance provider or contact our office to confirm pricing and coverage.</p>
+                </div>
+                <button><img src="img/accordion.png" alt=""></button>
+            </div>
+            <div class="freq4">
+                <div class="q4">
+                    <h1>What is the telemedicine used for?</h1>
+                    <P>Telemedicine enables remote access to our healthcare services, uses secure video conferencing to remotely connect you with our healthcare providers for:</P>
+                    <ul>
+                        <li>- Virtual doctor visits</li>
+                        <li>- Remote monitoring</li>
+                        <li>- Medical advice</li>
+                        <li>- Therapy sessions</li>
+                        <li>- Follow-up appointments</li>
+                        <li>- Prescription refills</li>
+                        <li>- Minor medical issues</li>
+                        <li>- Mental health support</li>
+                    </ul>
+                    <p>Conveniently access quality care from the comfort of your own home.</p>
+                </div>
+                <button><img src="img/accordion.png" alt=""></button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <img src="img/shortlogo-bg.png" alt="">
+        <div class="foot1">
+            <div>
+                <h1>About Us</h1>
+                <div></div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda explicabo, quibusdam in ipsum voluptate excepturi quos dignissimos ad voluptas!</p>
+        </div>
+        <div class="foot2">
+            <div>
+                <h1>Contact Us</h1>
+                <div></div>
+            </div>
+            <div>
+                <div>
+                    <h1>Phone:</h1>
+                    <p>125-965-7854</p>
+                </div>
+                <div>
+                    <h1>Email:</h1>
+                    <p>support@websolutionus.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="foot3">
+            <h1>Services</h1>
+            <ul>
+                <li>Cardiologist</li>
+                <li>Emergency Services</li>
+                <li>Theraphy</li>
+                <li>DNA Testing</li>
+            </ul>
+        </div>
+        <div class="faqbtn">
+            <button>FAQ</button>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

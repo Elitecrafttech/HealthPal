@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+main{
+    background: url(/img/doctor-showing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media screen and (max-width:950px) {
+    main{
+        background: url(/img/Physical-examination.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

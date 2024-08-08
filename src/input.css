@@ -1,0 +1,282 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .topbar{
+        @apply size-full flex flex-col items-center
+        bg-[#00aeff] px-[70px] md:flex-row
+        md:justify-between
+        
+    }
+    .barimg{
+        @apply flex h-[35px] items-center gap-[10px]
+
+    }
+    .barimg img{
+        @apply h-[20px] cursor-pointer
+    }
+    .contactinfo{
+        @apply flex flex-col items-center gap-[20px]
+        md:flex-row
+    }
+    .info1{
+        @apply flex items-center gap-[10px]
+        cursor-pointer
+    }
+    .info1 img{
+        @apply h-[20px]
+    }
+    .hr1{
+        @apply hidden md:flex md:bg-white
+        md:w-[2px] md:h-[20px]
+    }
+    .info2{
+        @apply flex items-center gap-[10px]
+        cursor-pointer
+    }
+    .info2 img{
+        @apply h-[15px]
+    }
+    .hr2{
+        @apply hidden md:flex md:bg-white
+        md:w-[2px] md:h-[20px]
+    }
+    .nextbar{
+        @apply flex bg-[#0B80B5] justify-between
+        h-[100px] items-center md:px-[50px]        
+    }
+    .nextbar img{
+        @apply h-[40px] md:h-[70px]
+    }
+    .nextbar ul{
+        @apply hidden md:flex md:gap-[50px]
+        md:text-white md:items-center
+    }
+    .nextbar li{
+        @apply cursor-pointer
+    }
+    .nextbtn{
+        @apply bg-[#1b1a1a] hover:bg-slate-500
+        p-[10px] rounded-sm
+    }
+    .ham{
+        @apply md:hidden
+    }
+    .hero{
+        @apply flex flex-col-reverse pb-[70px]
+        md:flex-row md:pb-[70px]
+
+    }
+    .hero1{
+        @apply flex flex-col gap-[30px] 
+        md:pl-[70px]
+    }
+    .hero1 h1{
+        @apply text-center text-[30px] font-medium
+        font-[oldenburg] text-[#ed1a1a]
+        md:font-extrabold md:w-[50vw] md:text-[40px]
+        md:text-left
+    }
+    .herop1{
+        @apply text-3xl text-center font-extrabold
+        md:font-normal md:text-start md:text-2xl
+    }
+    .EAbtn{
+        @apply flex flex-col-reverse gap-[20px]
+        items-center md:items-start md:flex-row
+    }
+    .Abtn{
+        @apply bg-[#00aeff] hover:bg-[#E86E30]
+        text-white p-[10px] text-[27px] w-[80vw]
+        rounded-full md:w-[15vw] md:p-[7px] md:text-base
+    }
+    .Ebtn{
+        @apply text-[#1b1a1a] hover:text-[#E86E30]
+        text-[35px] md:text-[20px]
+    }
+    .hero2{
+        @apply size-full md:flex md:items-center
+    }
+    .hero2 img{
+        @apply md:hidden h-[200px]
+    }
+    .herop2{
+        @apply text-[23px] text-center 
+        md:text-start md:text-base md:w-[40vw]
+    }
+    .form{
+        @apply md:px-[100px] size-full
+    }
+    .appointform{
+        @apply flex flex-col items-center
+        justify-center gap-[30px] bg-[gray]
+        p-[40px] md:rounded-xl md:flex-row
+        md:relative md:bottom-[50px]
+    }
+    .putname, .putops, .putdate{
+        @apply p-[18px] w-[90vw] text-[30px] outline-none
+        placeholder:font-normal placeholder:pl-[10px]
+        placeholder:text-[30px] placeholder:text-black
+        bg-transparent
+        border-[1px] border-slate-300 rounded-md
+        md:w-[18vw] md:p-[10px] md:text-base
+        md:placeholder:text-[20px]
+    }
+    .putbtn{
+        @apply bg-[#00aeff] hover:bg-[#0a0503]
+        text-white p-[10px] text-[27px] w-[90vw]
+        md:w-[15vw] md:p-[7px] md:text-base md:rounded-sm
+    }
+    .service{
+        @apply flex flex-col items-center gap-[40px]
+        py-[70px] px-[30px] md:py-0 md:gap-[90px]
+    }
+    .ser1{
+        @apply font-extrabold text-[28px] md:text-6xl
+    }
+    .care{
+        @apply flex flex-col items-center gap-[70px]
+    }
+    .care1{
+        @apply flex flex-col md:flex-row gap-[30px]
+    }
+    .care1 img{
+        @apply h-[70px]
+    }
+    .care1 div{
+        @apply flex flex-col items-center
+        bg-white shadow-2xl p-[10px] gap-[20px]
+        rounded-lg
+    }
+    .care1 div h1{
+        @apply font-extrabold text-xl
+    }
+    .care1 div p{
+        @apply text-center md:text-start
+    }
+    .care2{
+        @apply flex flex-col md:flex-row gap-[30px]
+    }
+    .care2 img{
+        @apply h-[70px]
+    }
+    .care2 div{
+        @apply flex flex-col items-center
+        bg-white shadow-2xl p-[10px] gap-[20px]
+        rounded-lg
+    }
+    .care2 div h1{
+        @apply font-extrabold text-xl
+    }
+    .care2 div p{
+        @apply text-center md:text-start
+    }
+    .faq{
+        @apply flex flex-col md:flex-row
+        justify-around py-[100px]
+        gap-[30px] md:gap-0
+    }
+    .ask{
+        @apply flex flex-col gap-[50px]
+    }
+    .ask h1{
+        @apply font-extrabold text-[40px] text-center
+        md:text-left
+    }
+    .ask img{
+        @apply h-[350px]
+    }
+    .freq{
+        @apply flex flex-col gap-[40px] items-center
+    }
+    .freq1{
+        @apply flex items-center gap-[60px]
+    }
+    .freq1 img{
+        @apply h-[20px]
+    }
+    .q1{
+        @apply flex flex-col
+    }
+    .q1 h1{
+       @apply font-bold 
+    }
+    .q1 p{
+        @apply w-[70vw] md:w-[30vw]
+    }
+    .freq2{
+        @apply flex items-center gap-[60px]
+    }
+    .freq2 img{
+        @apply h-[20px]
+    }
+    .q2{
+        @apply flex flex-col
+    }
+    .q2 h1{
+       @apply font-bold 
+    }
+    .q2 p{
+        @apply w-[70vw] md:w-[30vw]
+    }
+    .freq3{
+        @apply flex items-center gap-[60px]
+    }
+    .freq3 img{
+        @apply h-[20px]
+    }
+    .q3{
+        @apply flex flex-col
+    }
+    .q3 h1{
+       @apply font-bold 
+    }
+    .q3 p{
+        @apply w-[70vw] md:w-[30vw]
+    }
+    .freq4{
+        @apply flex gap-[60px]
+    }
+    .freq4 img{
+        @apply h-[20px]
+    }
+    .q4{
+        @apply flex flex-col gap-[15px]
+    }
+    .q4 h1{
+       @apply font-bold 
+    }
+    .q4 p{
+        @apply w-[70vw] md:w-[30vw]
+    }
+    .footer{
+        @apply flex flex-col md:flex-row 
+        bg-[#504625] text-white justify-around
+        p-[20px]
+    }
+    .footer img{
+        @apply h-[60px]
+    }
+    .foot1{
+        @apply flex flex-col gap-[30px]
+    }
+    .foot1 p{
+        @apply w-[25vw]
+    }
+    .foot2{
+        @apply flex flex-col gap-[30px]
+    }
+    .foot2 p{
+        @apply w-[25vw]
+    }
+    .foot3{
+        @apply flex flex-col gap-[30px]
+    }
+    .faqbtn{
+        @apply self-center px-[40px]
+    }
+    .faqbtn button{
+        @apply text-[30px] tracking-[20px]
+    }
+}
