@@ -9,27 +9,54 @@
     <link rel="stylesheet" href="./src/appoint.css">
 </head>
 <body>
-    <form
-    action="https://forms-io.onrender.com/submit-form/1ef60e77-3bcf-435b-8827-32cd9d7a1172"
-    method="POST"
-    >
-    <label>
-        Name:
-        <input required type="text" name="fullName" />
-    </label>
-    <label>
-        Email:
-        <input required type="Email" name="email" />
-    </label>
-    <label>
-        Subject:
-        <input required type="text" name="subject" />
-    </label>
-    <label>
-        Message:
-        <textarea name="message" id="" required></textarea>
-    </label>
-	<button type="submit">Submit</button>
-</form>
+    <main>
+        <div class="wrap">
+            <div class="topform">Book Appointment With Doctor below</div>
+        <form class="form" action="https://forms-io.onrender.com/submit-form/1ef60e77-3bcf-435b-8827-32cd9d7a1172" method="POST">
+        <div class="ename">
+            <label>
+                Name:
+                <input required type="text" name="fullName" />
+            </label>
+            <label>
+                Email:
+                <input required type="Email" name="email" />
+            </label>
+        </div>
+        <div class="option">
+            <label>
+                Gender
+                <select>
+                    <option value="Male">Male</option>
+                    <option value="Female">Male</option>
+                    <option value="Female">Other</option>
+                </select>
+            </label>
+            <label>
+                Age
+                <select>
+                    <option value="">Please Select</option>
+                    <option value="age">18-24</option>
+                    <option value="age">25-34</option>
+                    <option value="age">35-44</option>
+                    <option value="age">45-54</option>
+                    <option value="age">55+</option>
+                </select>
+            </label>
+        </div>
+        <div class="reason">
+            <label class="lab1">
+                Appointment Subject :
+                <input required type="text" name="subject" />
+            </label>
+            <label class="lab2">
+                Reason For Consultation :
+                <textarea name="message" id="" required placeholder="Type Here...."></textarea>
+            </label>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+    </form>
+        </div>
+    </main>
 </body>
 </html>

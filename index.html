@@ -31,21 +31,24 @@
                 </div>
                 <div class="hr2"></div>
                 <div>
-                    <button>Contact Us</button>
+                    <a href="#contact"><button>Contact Us</button></a>
                 </div>
             </div>
         </nav>
         <nav class="nextbar">
             <img src="img/shortlogo-bg.png" alt="">
-            <div>
-                <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Services</li>
+            <div class="menubar">
+                <ul class="openmenu">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="#about"><li>About Us</li></a>
+                    <a href="#offer"><li>Services</li></a>
                     <li>Locations</li>
-                    <button class="nextbtn">Book a Section</button>
+                    <a href="#secform"><button class="nextbtn">Book a Section</button></a>
                 </ul>
-                <img src="img/hambuger.png" alt="" class="ham">
+                <div class="hambtn">
+                    <img src="img/open-icon.png" alt="" class="ham1" onclick="menubar()">
+                    <img src="img/close-icon.png" alt="" class="ham2" onclick="menubar()">
+                </div>
             </div>
         </nav>
         <section class="hero">
@@ -54,8 +57,8 @@
                 <h1>Medical Centers & Clinical Support.. Make Your Health Better</h1>
                 <p class="herop2">"Welcome to HealthPal, your trusted companion for a healthier life. We empower individuals to take control of their well-being by providing personalized health insights, expert guidance, and supportive community connections. With HealthPal, discover a holistic approach to wellness that nurtures your body, mind, and spirit."</p>
                 <div class="EAbtn">
-                    <button class="Abtn">Book Appointment</button>
-                    <button class="Ebtn">Explore Our Services ></button>
+                    <a href="#secform"><button class="Abtn">Book Appointment</button></a>
+                    <a href="#offer"><button class="Ebtn">Explore Our Services ></button></a>
                 </div>
             </div>
             <div class="hero2">
@@ -63,7 +66,7 @@
             </div>
         </section>
     </main>
-    <section class="form">
+    <section class="form" id="secform">
         <div class="appointform">
             <input type="text" required="" placeholder="Your Name" class="putname">
             <select required="" class="putops">
@@ -78,7 +81,7 @@
             <button class="putbtn" onclick="booking()">Book Now</button>
         </div>
     </section>
-    <section class="service">
+    <section class="service" id="offer">
         <h1 class="ser1">Services & Health Care</h1>
         <div class="care">
             <div class="care1">
@@ -134,7 +137,7 @@
         </div>
     </section>
     <section class="faq">
-        <div class="ask">
+        <div class="ask" id="Questions">
             <h1>Frequently Asked Questions</h1>
             <img src="img/doc-bg-header.png" alt="">
         </div>
@@ -180,18 +183,42 @@
             </div>
         </div>
     </section>
+    <nav class="topbar2">
+        <div class="contactinfo">
+            <div class="info1">
+                <img src="img/email-logo.png" alt="">
+                <p>support@healthpalsolution.com</p>
+            </div>
+            <div class="hr1"></div>
+            <div class="info2">
+                <img src="img/phone-icon.png" alt="">
+                <p>123-456-7890</p>
+            </div>
+            <div class="hr2"></div>
+            <div>
+                <a href="#contact"><button>Contact Us</button></a>
+            </div>
+        </div>
+        <div class="barimg2">
+            <img src="img/facebook-icon.png" alt="">
+            <img src="img/twitter-icon.png" alt="">
+            <img src="img/insta-icon.png" alt="">
+            <img src="img/linkedin-icon.png" alt="">
+            <img src="" alt="">
+        </div>
+    </nav>
     <footer class="footer">
         <img src="img/shortlogo-bg.png" alt="">
-        <div class="foot1">
+        <div class="foot1" id="about">
             <div>
                 <h1>About Us</h1>
                 <div></div>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda explicabo, quibusdam in ipsum voluptate excepturi quos dignissimos ad voluptas!</p>
         </div>
-        <div class="foot2">
+        <div class="foot2" id="contact">
             <div>
-                <h1>Contact Us</h1>
+                <h1 class="c-us">Contact Us</h1>
                 <div></div>
             </div>
             <div>
@@ -201,7 +228,7 @@
                 </div>
                 <div>
                     <h1>Email:</h1>
-                    <p>support@websolutionus.com</p>
+                    <p>support@healthpalsolution.com</p>
                 </div>
             </div>
         </div>
@@ -215,7 +242,7 @@
             </ul>
         </div>
         <div class="faqbtn">
-            <button>FAQ</button>
+            <a href="#Questions"><button>FAQ</button></a>
         </div>
     </footer>
 

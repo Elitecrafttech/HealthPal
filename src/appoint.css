@@ -2,14 +2,132 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .form{
-        @apply flex flex-col gap-5
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wrap{
+    /* background: url(/img/image.jpg); */
+    /* background-size: cover; */
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0px;
+    gap: 30px;
+    border-radius: 10px;
+}
+.topform{
+    align-self: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.ename{
+    display: flex;
+    gap: 50px;
+}
+.ename label{
+    display: flex;
+    flex-direction: column;
+}
+.ename input{
+    background: transparent;
+    border: solid 1px black;
+    padding: 5px;
+    border-width: 0 0 1px;
+    outline: none;
+}
+.option{
+    display: flex;
+    gap: 50px;
+}
+.option label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.option select{
+    background-color: transparent;
+    border: solid 1px black;
+    border-radius: 50px;
+    width: 15vw;
+    padding: 5px;
+    outline: none;
+}
+.reason{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.lab1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.lab1 input{
+    border-radius: 5px;
+    padding: 7px;
+    outline: none;
+    width: 20vw;
+}
+.lab2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.lab2 textarea{
+    height: 130px;
+    width: 34vw;
+    background: transparent;
+    border: solid 2px black;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+}
+.btn{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 5px;
+}
+.btn:hover{
+    background-color: wheat;
+}
+
+@media screen and (max-width:950px) {
+    .wrap{
+        padding: 30px 20px;
     }
-    input{
-        @apply border-solid border-2
+    .topform{
+        text-align: center;
     }
-    textarea{
-        @apply border-solid border-2
+    .ename{
+        flex-direction: column;
+    }
+    .option{
+        flex-direction: column;
+    }
+    .option select{
+        width: 88vw;
+    }
+    .lab1{
+        flex-direction: column;
+        font-size: 25px;
+    }
+    .lab1 input{
+        width: 80vw;
+    }
+    .lab2{
+        font-size: 25px;
+        align-items: center;
+    }
+    .lab2 textarea{
+        width: 80vw;
     }
 }

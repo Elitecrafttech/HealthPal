@@ -589,21 +589,21 @@ video {
 }
 
 .topbar {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 174 255 / var(--tw-bg-opacity));
-  padding-left: 70px;
-  padding-right: 70px;
+  display: none;
 }
 
 @media (min-width: 768px) {
   .topbar {
+    display: flex;
+    width: 100%;
+    height: 100%;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 174 255 / var(--tw-bg-opacity));
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
 
@@ -708,22 +708,40 @@ video {
   }
 }
 
-.nextbar ul {
-  display: none;
+.openmenu {
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  left: 0px;
+  height: 0vh;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(11 128 181 / var(--tw-bg-opacity));
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
-  .nextbar ul {
+  .openmenu {
+    position: static;
     display: flex;
-    align-items: center;
+    height: 30px;
+    width: auto;
+    flex-direction: row;
     gap: 50px;
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
+    border-radius: 0px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
   }
-}
-
-.nextbar li {
-  cursor: pointer;
 }
 
 .nextbtn {
@@ -739,9 +757,23 @@ video {
 }
 
 @media (min-width: 768px) {
-  .ham {
+  .hambtn {
     display: none;
   }
+}
+
+.hambtn img {
+  height: 30px;
+}
+
+.hambtn .ham1 {
+  height: 70px;
+}
+
+.ham2 {
+  position: relative;
+  right: 20px;
+  display: none;
 }
 
 .hero {
@@ -857,14 +889,7 @@ video {
   .Ebtn {
     font-size: 20px;
   }
-}
 
-.hero2 {
-  width: 100%;
-  height: 100%;
-}
-
-@media (min-width: 768px) {
   .hero2 {
     display: flex;
     align-items: center;
@@ -872,6 +897,8 @@ video {
 }
 
 .hero2 img {
+  width: 100%;
+  height: 100%;
   height: 200px;
 }
 
@@ -1427,10 +1454,42 @@ video {
   }
 }
 
+.topbar2 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 174 255 / var(--tw-bg-opacity));
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+@media (min-width: 768px) {
+  .topbar2 {
+    display: none;
+  }
+}
+
+.barimg2 {
+  display: flex;
+  height: 35px;
+  align-items: center;
+  gap: 10px;
+}
+
+.barimg2 img {
+  height: 30px;
+  cursor: pointer;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  gap: 30px;
   --tw-bg-opacity: 1;
   background-color: rgb(80 70 37 / var(--tw-bg-opacity));
   padding: 20px;
@@ -1441,27 +1500,70 @@ video {
 @media (min-width: 768px) {
   .footer {
     flex-direction: row;
+    gap: 0px;
   }
-}
 
-.footer img {
-  height: 60px;
+  .footer img {
+    height: 50px;
+  }
 }
 
 .foot1 {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .foot1 {
+    gap: 30px;
+  }
+}
+
+.foot1 h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .foot1 h1 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 .foot1 p {
-  width: 25vw;
+  width: 70vw;
+}
+
+@media (min-width: 768px) {
+  .foot1 p {
+    width: 25vw;
+  }
 }
 
 .foot2 {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .foot2 {
+    gap: 30px;
+  }
+}
+
+.c-us {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .c-us {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 .foot2 p {
@@ -1471,7 +1573,25 @@ video {
 .foot3 {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .foot3 {
+    gap: 30px;
+  }
+}
+
+.foot3 h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .foot3 h1 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 .faqbtn {
@@ -1482,7 +1602,14 @@ video {
 
 .faqbtn button {
   font-size: 30px;
+  font-weight: 700;
   letter-spacing: 20px;
+}
+
+@media (min-width: 768px) {
+  .faqbtn button {
+    font-weight: 400;
+  }
 }
 
 .sr-only {

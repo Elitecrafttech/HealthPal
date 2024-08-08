@@ -4,8 +4,8 @@
 
 @layer components{
     .topbar{
-        @apply size-full flex flex-col items-center
-        bg-[#00aeff] px-[70px] md:flex-row
+        @apply hidden md:size-full md:flex md:items-center
+        md:bg-[#00aeff] md:px-[70px] md:flex-row
         md:justify-between
         
     }
@@ -44,24 +44,38 @@
     }
     .nextbar{
         @apply flex bg-[#0B80B5] justify-between
-        h-[100px] items-center md:px-[50px]        
+        h-[100px] items-center md:px-[50px]      
     }
     .nextbar img{
         @apply h-[40px] md:h-[70px]
     }
-    .nextbar ul{
-        @apply hidden md:flex md:gap-[50px]
-        md:text-white md:items-center
-    }
-    .nextbar li{
-        @apply cursor-pointer
+    .openmenu{
+        @apply flex-col md:flex md:flex-row
+        gap-[10px] md:gap-[50px]
+        text-white items-center text-center
+        md:static md:w-auto absolute top-[80px]
+        right-[0px] left-[0px] h-[0vh] md:h-[30px]
+        leading-[40px] text-[20px] font-semibold
+        md:text-base md:font-normal rounded-lg
+        md:rounded-none overflow-hidden
+        bg-[#0B80B5]
+
     }
     .nextbtn{
         @apply bg-[#1b1a1a] hover:bg-slate-500
         p-[10px] rounded-sm
     }
-    .ham{
+    .hambtn{
         @apply md:hidden
+    }
+    .hambtn img{
+        @apply h-[30px]
+    }
+    .hambtn .ham1{
+        @apply h-[70px]
+    }
+    .ham2{
+        @apply hidden relative right-[20px]
     }
     .hero{
         @apply flex flex-col-reverse pb-[70px]
@@ -96,10 +110,10 @@
         text-[35px] md:text-[20px]
     }
     .hero2{
-        @apply size-full md:flex md:items-center
+        @apply md:flex md:items-center
     }
     .hero2 img{
-        @apply md:hidden h-[200px]
+        @apply md:hidden h-[200px] size-full
     }
     .herop2{
         @apply text-[23px] text-center 
@@ -250,33 +264,55 @@
     .q4 p{
         @apply w-[70vw] md:w-[30vw]
     }
+    .topbar2{
+        @apply size-full flex flex-col items-center
+        bg-[#00aeff] px-[70px] gap-[10px] md:hidden
+        
+    }
+    .barimg2{
+        @apply flex h-[35px] items-center gap-[10px]
+
+    }
+    .barimg2 img{
+        @apply h-[30px] cursor-pointer
+    }
     .footer{
         @apply flex flex-col md:flex-row 
         bg-[#504625] text-white justify-around
-        p-[20px]
+        p-[20px] gap-[30px] md:gap-0
     }
     .footer img{
-        @apply h-[60px]
+        @apply md:h-[50px] 
     }
     .foot1{
-        @apply flex flex-col gap-[30px]
+        @apply flex flex-col md:gap-[30px] gap-[10px]
+    }
+    .foot1 h1{
+        @apply font-bold text-[30px] md:text-lg
     }
     .foot1 p{
-        @apply w-[25vw]
+        @apply md:w-[25vw] w-[70vw]
     }
     .foot2{
-        @apply flex flex-col gap-[30px]
+        @apply flex flex-col md:gap-[30px] gap-[10px]
+    }
+    .c-us{
+        @apply font-bold text-[30px] md:text-lg
     }
     .foot2 p{
         @apply w-[25vw]
     }
     .foot3{
-        @apply flex flex-col gap-[30px]
+        @apply flex flex-col md:gap-[30px] gap-[10px]
+    }
+    .foot3 h1{
+        @apply font-bold text-[30px] md:text-lg
     }
     .faqbtn{
         @apply self-center px-[40px]
     }
     .faqbtn button{
-        @apply text-[30px] tracking-[20px]
+        @apply text-[30px] tracking-[20px] font-bold
+        md:font-normal
     }
 }
