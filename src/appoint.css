@@ -140,4 +140,7 @@ main{
     .lab2 textarea{
         width: 80vw;
     }
+    textarea::placeholder{
+        color: black;
+    }
 }
